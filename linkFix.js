@@ -1,3 +1,4 @@
+// Redirects all links with an href attribute ending in 'mid', 'MID', or 'Mid'
 $(document).ready(function () {
     $('a[href$="mid"],a[href$="MID"],a[href$="Mid"]').click(function (e) {
     	var fUrl = encodeURIComponent($(this).attr('href'));
