@@ -1,0 +1,68 @@
+/*
+ * Note: This was hacked together as things/features popped up and therefore
+ *       likely contains unneeded things. Basically, sorry if you read this.
+ */
+
+#titleDiv {
+    padding: 15px 0;
+    text-align: center;
+}
+
+#title {
+    font-size: larger;
+}
+
+#returnLink, #returnLink:visited {
+    color: blue;
+    text-decoration: none;
+}
+
+#returnLink:hover {
+    text-decoration: underline;
+}
+
+hr {
+    width: 80%;
+}
+
+#content {
+    text-align: center;
+}
+
+.controlImg {
+    display: none;
+    cursor: pointer;
+    padding: 0 20px;
+}
+
+#seekBarContainer {
+    display: none;
+    width: 70%;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#time {
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+#mobileStart {
+    margin-top: 50px;
+    display: none;
+}
+
+#speedControls {
+    margin-top: 50px;
+    display: none;
+}
+
+#BPMContainer {
+    padding-top: 15px;
+    display: none;
+}
+
+#speedChangeLink {
+    cursor: pointer;
+}

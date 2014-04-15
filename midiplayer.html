@@ -1,0 +1,58 @@
+<html>
+<head>
+    <title>Ketzev MIDI Player</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="midiplayer.css" />
+    <script type="text/javascript" src="//code.jquery.com/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="midiplayer.js"></script>
+    <!-- midi.js package -->
+    <script src="./js/Color/SpaceW3.js" type="text/javascript"></script>
+    <script src="./js/MIDI/AudioDetect.js" type="text/javascript"></script>
+    <script src="./js/MIDI/LoadPlugin.js" type="text/javascript"></script>
+    <script src="./js/MIDI/Plugin.js" type="text/javascript"></script>
+    <script src="./js/MIDI/Player.js" type="text/javascript"></script>
+    <script src="./js/MusicTheory/Synesthesia.js" type="text/javascript"></script>
+    <script src="./js/Widgets/Loader.js" type="text/javascript"></script>
+    <script src="./js/Window/Event.js" type="text/javascript"></script>
+    <script src="./js/Window/DOMLoader.XMLHttp.js" type="text/javascript"></script>
+    <!-- jasmid package -->
+    <script src="./inc/jasmid/stream.js"></script>
+    <script src="./inc/jasmid/midifile.js"></script>
+    <script src="./inc/jasmid/replayer.js"></script>
+    <!-- extras -->
+    <script src="./inc/Base64.js" type="text/javascript"></script>
+    <script src="./inc/base64binary.js" type="text/javascript"></script>
+    
+    <script type="text/javascript" src="//code.jquery.com/ui/1.10.4/jquery-ui.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="//code.jquery.com/ui/1.10.4/themes/blitzer/jquery-ui.css" />
+</head>
+<body>
+    <div id="titleDiv">
+        <h2 id="title"></h2>
+        <a id="returnLink">Go Back</a>
+    </div>
+    <hr />
+    <div id="content">
+        <div id="BPMContainer">N/A<span id="BPM"></span> BPM</div>
+        <div id="seekBarContainer">
+            <div id="seekBar"></div>
+            <div id="time"><span id="currTime"></span> / <span id="endTime"></span></div>
+        </div>
+        <img id="jumpBackward" class="controlImg" src="img/backward.png" width="64" height="64" title="Jump back - Shortcut: b" />
+        <img id="togglePlayback" class="controlImg" src="img/pause.png" width="64" height="64" title="Play/Pause - Shortcut: p or spacebar" />
+        <img id="jumpForward" class="controlImg" src="img/forward.png" width="64" height="64" title="Jump foward - Shortcut: f" />
+        
+        <div id="speedControls">
+            <h3 id="speedChangeLink" title="Click here or press the s key to set a custom speed">Change Speed</h3>
+            <button class="speedBtn" warp="2" factor=".25">25%</button>
+            <button class="speedBtn" warp="1.5" factor=".5">50%</button>
+            <button class="speedBtn" warp="1.25" factor=".75">75%</button>
+            <button class="speedBtn" warp="1" factor="1" disabled>Actual</button>
+            <button class="speedBtn" warp=".75" factor="1.25">125%</button>
+        </div>
+        <!-- Required since iOS won't play sound until the user interacts with a webpage -->
+        <button id="mobileStart">Start Playback</button>
+    </div>
+</body>
+</html>
