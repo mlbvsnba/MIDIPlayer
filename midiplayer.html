@@ -34,7 +34,7 @@
     </div>
     <hr />
     <div id="content">
-        <div id="BPMContainer">N/A<span id="BPM"></span> BPM</div>
+        <div id="BPMContainer"><span id="BPM">N/A</span> BPM</div>
         <div id="seekBarContainer">
             <div id="seekBar"></div>
             <div id="time"><span id="currTime"></span> / <span id="endTime"></span></div>
@@ -54,5 +54,20 @@
         <!-- Required since iOS won't play sound until the user interacts with a webpage -->
         <button id="mobileStart">Start Playback</button>
     </div>
+    <!-- Piwik -->
+    <script type="text/javascript">
+        var _paq = _paq || [];
+        _paq.push(["trackPageView"]);
+        _paq.push(["enableLinkTracking"]);
+
+        (function() {
+            var u=(("https:" == document.location.protocol) ? "https" : "http") + "://mlbvsnba.no-ip.org/piwik/";
+            _paq.push(["setTrackerUrl", u+"piwik.php"]);
+            _paq.push(["setSiteId", "2"]);
+            var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
+            g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
+        })();
+    </script>
+    <!-- End Piwik Code -->
 </body>
 </html>
